@@ -1,0 +1,36 @@
+guia https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con {
+            display: flex;
+            background: chartreuse;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            flex-direction: column;
+        }
+        .it {
+            width: 30px;
+            height: 30px;
+            background: chocolate;
+        }
+        .con .it:nth-child(2n + 1) {
+            background: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="it"></div>
+        <div class="it"></div>
+        <div class="it"></div>
+        <div class="it"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: salmon;
+        }
+        p:hover {
+            color: skyblue;
+            
+        }
+        div p:nth-child(3) {  
+            color: violet;
+        }
+
+        p::first-letter {
+            color: tomato;
+        }
+        p::before {
+            content: "G";
+        }
+        ::placeholder {
+            color: darkred
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <p>hola</p>
+    
+       <p>Hola mierlda</p>
+ 
+    <p>Hola mierlda</p>
+  </div>
+
+</body>
+</html>
+
+
+
+seudo elementos: https://github.com/platzi/curso-frontend-developer/blob/5108689bdb6599cc92bd9595db28784f9be48704/curso-1/selectores-3.html
